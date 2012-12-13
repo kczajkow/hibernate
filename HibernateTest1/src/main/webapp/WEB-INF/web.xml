@@ -12,4 +12,12 @@
 		<servlet-name>MainServlet</servlet-name>
 		<url-pattern>/MainServlet</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>DigestServlet</servlet-name>
+		<servlet-class>org.czajkowski.DigestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DigestServlet</servlet-name>
+		<url-pattern>/DigestServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
