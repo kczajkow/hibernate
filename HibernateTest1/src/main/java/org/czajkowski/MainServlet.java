@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 
 public class MainServlet extends HttpServlet {
 
@@ -42,7 +42,7 @@ public class MainServlet extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 
-		SessionFactory sf = new AnnotationConfiguration(). 
+		SessionFactory sf = new Configuration().
 				configure("/hibernate.cfg.xml").
 				buildSessionFactory();
 
