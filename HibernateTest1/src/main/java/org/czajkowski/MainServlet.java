@@ -69,6 +69,11 @@ public class MainServlet extends HttpServlet {
 		List list = newSession.createQuery("from Customer").list();
 		Customer cust1 = (Customer) list.get(0);
 		
+		//List list1 = newSession.createCriteria(Survey.class)
+		//		.add(Restrictions.eq("stars", new Integer(8)))
+		//		.list();
+		//System.out.println(list1);
+		
 		newTransaction.commit();
 		newSession.close();
 
